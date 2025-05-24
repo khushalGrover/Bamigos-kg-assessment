@@ -5,8 +5,8 @@ const HomeHero = () => {
   return (
     <section class="C_showcase">
       <div class="C_text">
-        <h2>Premium</h2>
-        <h2>Arcade Machines</h2>
+        <h3 > Premium</h3>
+        <h2><span className="color-pink">Arcade </span><span className="color-yellow">Machines</span></h2>
         <h3>for Your Entertainment Venue</h3>
         <p>
           Transform your space into an unforgettable entertainment destination with our cutting-edge arcade machines.

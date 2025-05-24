@@ -51,13 +51,13 @@ const AdAgency = () => {
 
       <HomeAbout /> 
 
-      <HomeTeam />
+      {/* <HomeTeam /> */}
 
       <HomeQuote />
 
       <HomePortfolio />
 
-      <HomePricing />
+      {/* <HomePricing /> */}
 
       <HomeClients />
 

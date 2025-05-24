@@ -101,7 +101,7 @@ const NavigationBar = () => {
                 <li className="nav-item"> <a href="#home" className="scroll nav-link link">home</a></li>
                 <li className="nav-item"> <a href="#shop" className="scroll nav-link link">shop</a></li>
                 <li className="nav-item"> <a href="#about" className="scroll nav-link link">about</a></li>
-                <li className="nav-item"> <a href="#pricing" className="scroll nav-link link">pricing</a></li>
+                {/* <li className="nav-item"> <a href="#pricing" className="scroll nav-link link">pricing</a></li> */}
                 <li className="nav-item"> <a href="#clients" className="scroll nav-link link">clients</a></li>
                 <li className="nav-item"> <a href="#blog" className="scroll nav-link link">blog</a></li>
                 <li className="nav-item"> <a href="#contact" className="scroll nav-link link">contact</a></li>
@@ -141,7 +141,7 @@ const NavigationBar = () => {
                 <li className="nav-item"> <a href="#home" className="scroll nav-link link">home</a></li>
                 <li className="nav-item"> <a href="#shop" className="scroll nav-link link">shop</a></li>
                 <li className="nav-item"> <a href="#about" className="scroll nav-link link">about</a></li>
-                <li className="nav-item"> <a href="#pricing" className="scroll nav-link link">pricing</a></li>
+                {/* <li className="nav-item"> <a href="#pricing" className="scroll nav-link link">pricing</a></li> */}
                 <li className="nav-item"> <a href="#clients" className="scroll nav-link link">clients</a></li>
                 <li className="nav-item"> <a href="#blog" className="scroll nav-link link">blog</a></li>
                 <li className="nav-item"> <a href="#contact" className="scroll nav-link link">contact</a></li>

@@ -1,4 +1,5 @@
 /*-- Use For Custom Styling --*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 
 .custom-style-logo { 
@@ -26,7 +27,6 @@
 /*  */
 
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 *
 {
   margin: 0;
@@ -72,7 +72,7 @@
 
 .C_showcase .C_text h2
 {
-  font-size: 4em;
+  font-size: 5em;
   font-weight: 800;
   color: #fff;
   line-height: 1em;
