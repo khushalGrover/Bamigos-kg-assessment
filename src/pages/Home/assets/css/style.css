@@ -842,7 +842,11 @@ nav .btn-setting {
 }
 /* logo */
 .logo {
-    max-width: 140px;
+    min-width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 .logo img {
     vertical-align: middle;
