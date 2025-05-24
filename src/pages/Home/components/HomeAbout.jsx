@@ -11,7 +11,7 @@ const HomeAbout = () => {
           <Col lg={6} className="pl-6">
             <div className="main-title text-lg-left offset-md-1 mb-0 wow fadeInUp" data-wow-delay="300ms">
               <h5 className="wow fadeInUp" data-wow-delay="300ms"> Lorem ipsum dolor sit amet consectetur </h5>
-              <h2 className="wow fadeInUp font-weight-light" data-wow-delay="400ms"> We are making <span className="color-pink">design</span> better for everyone</h2>
+              <h2 className="wow fadeInUp font-weight-light" data-wow-delay="400ms"> We are making <span className="text-blue-500">design</span> better for everyone</h2>
               <p className="pb-4 wow fadeInUp" data-wow-delay="500ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue diam, accumsan vitae justo non, euismod aliquam lectus. Etiam elementum tortor quis risus posuere, in cursus arcu lobortis.</p>
               <ul className="pb-5 text-left wow fadeInUp" data-wow-delay="600ms">
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>

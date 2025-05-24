@@ -1,5 +1,6 @@
 /*-- Use For Custom Styling --*/
 
+
 .custom-style-logo { 
     width: 100px;
     height: auto;
@@ -16,5 +17,113 @@
 .myLogoText .large {
     font-size: 32px;
     font-weight: bold;
-     color: #007bff; /* Bootstrap primary color */
+     color: #007bff; 
+}
+
+
+
+
+/*  */
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.C_showcase
+{
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.C_showcase.active
+{
+  right: 300px;
+}
+
+.C_showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.C_showcase .C_text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.C_showcase .C_text h2
+{
+  font-size: 4em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.C_showcase .C_text h3
+{
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.C_showcase .C_text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.C_showcase .C_text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.C_showcase .C_text a:hover
+{
+  letter-spacing: 6px;
+}
+@media (max-width: 991px)
+{
+  .C_showcase
+  {
+    padding: 40px;
+  }
+  .C_showcase .C_text h2
+  {
+    font-size: 3em;
+  }
+  .C_showcase .C_text h3
+  {
+    font-size: 2em;
+  }
 }
