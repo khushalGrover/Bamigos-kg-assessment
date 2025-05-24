@@ -1,15 +1,25 @@
 import { useEffect } from 'react';
 import { toggleDocumentAttribute } from '@/utils';
 import WOW from 'wow.js';
+import Preloader from './components/Preloader';
 import NavigationBar from './components/NavigationBar';
+import HomeHero from './components/HomeHero';
+import HomeAbout from './components/HomeAbout';
+import HomeAboutBoxes from './components/HomeAboutBoxes';
+import HomeTeam from './components/HomeTeam';
+import HomeQuote from './components/HomeQuote';
+import HomePortfolio from './components/HomePortfolio';
+import HomePricing from './components/HomePricing';
+import HomeClients from './components/HomeClients';
+import HomeBlog from './components/HomeBlog';
+import HomeContactUs from './components/HomeContactUs';
 import Footer from './components/Footer';
-import Elements from './components/Elements';
-import Features from './components/Features';
-import Content from './components/Content';
-import '@vendor/css/plugins.min.css';
-import '@vendor/css/megamenu.css';
+import AnimatedCursor from './components/AnimatedCursor';
+import "@vendor/css/jquery.fancybox.min.css";
+import "@vendor/css/cubeportfolio.min.css";
 import './assets/css/style.css';
-const Home = () => {
+import './assets/css/custom.css';
+const AdAgency = () => {
   useEffect(() => {
     const width = $(window).width();
     if (width && width > 767) {
@@ -21,25 +31,43 @@ const Home = () => {
         live: true
       }).init();
     }
-    toggleDocumentAttribute('data-offset', '90', 'body');
     toggleDocumentAttribute('data-spy', 'scroll', 'body');
     toggleDocumentAttribute('data-target', '.navbar-nav', 'body');
+    toggleDocumentAttribute('data-offset', '90', 'body');
     return () => {
-      toggleDocumentAttribute('data-offset', '90', 'body', true);
       toggleDocumentAttribute('data-spy', 'scroll', 'body', true);
       toggleDocumentAttribute('data-target', '.navbar-nav', 'body', true);
+      toggleDocumentAttribute('data-offset', '90', 'body', true);
     };
   }, []);
   return <>
+      <Preloader />
+
       <NavigationBar />
 
-      <Content />
+      <HomeHero />
 
-      <Features />
+      <HomeAboutBoxes />
 
-      <Elements />
+      <HomeAbout /> 
+
+      <HomeTeam />
+
+      <HomeQuote />
+
+      <HomePortfolio />
+
+      <HomePricing />
+
+      <HomeClients />
+
+      <HomeBlog />
+
+      <HomeContactUs />
 
       <Footer />
+
+      <AnimatedCursor />
     </>;
 };
-export default Home;
+export default AdAgency;

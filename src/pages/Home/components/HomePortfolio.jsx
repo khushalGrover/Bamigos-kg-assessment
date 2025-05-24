@@ -51,13 +51,13 @@ const HomePortfolio = () => {
       }
     });
   }, []);
-  return <section id="work" className="pb-0 bg-dark1 ">
+  return <section id="shop" className="pb-0 bg-dark1 ">
       <Container fluid>
         <Row>
           <Col md={12}>
             <div className="main-title wow fadeIn" data-wow-delay="300ms">
               <h5> Lorem ipsum dolor sit amet </h5>
-              <h2 className="mb-0">Creative<span className="color-pink"> Portfolio</span> </h2>
+              <h2 className="mb-0">Arcade Games<span className="color-pink"> Collection</span> </h2>
             </div>
           </Col>
         </Row>
@@ -67,16 +67,16 @@ const HomePortfolio = () => {
               All <div className="cbp-filter-counter" />
             </div>
             <div data-filter=".graphic-designs" className="cbp-filter-item cbp-filter-style">
-              Graphic Designs <div className="cbp-filter-counter" />
+              Racing <div className="cbp-filter-counter" />
             </div>
             <div data-filter=".web-designs" className="cbp-filter-item cbp-filter-style">
-              Web Designs <div className="cbp-filter-counter" />
+              VR <div className="cbp-filter-counter" />
             </div>
             <div data-filter=".seo" className="cbp-filter-item cbp-filter-style">
-              SEO <div className="cbp-filter-counter" />
+              Ticket Redemption Game <div className="cbp-filter-counter" />
             </div>
             <div data-filter=".marketing" className="cbp-filter-item">
-              Marketing <div className="cbp-filter-counter" />
+              New Launches <div className="cbp-filter-counter" />
             </div>
           </div>
           <div id="js-grid-mosaic-flat" className="cbp cbp-l-grid-mosaic-flat no-transition">
