@@ -15,6 +15,7 @@ import HomeBlog from './components/HomeBlog';
 import HomeContactUs from './components/HomeContactUs';
 import Footer from './components/Footer';
 import AnimatedCursor from './components/AnimatedCursor';
+import { CanvasEle } from './components/CanvasEle';
 import "@vendor/css/jquery.fancybox.min.css";
 import "@vendor/css/cubeportfolio.min.css";
 import './assets/css/style.css';
@@ -45,8 +46,10 @@ const AdAgency = () => {
 
       <NavigationBar />
 
-      <HomeHero />
+      <CanvasEle />
 
+      <HomeHero />
+      
       <HomeAboutBoxes />
 
       <HomeAbout /> 

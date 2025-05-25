@@ -1,42 +1,33 @@
 /*-- Use For Custom Styling --*/
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 
-.custom-style-logo { 
-    width: 100px;
-    height: auto;
-    margin: 20px;
-}
-
-.myLogoText { 
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-
-}
-
-.myLogoText .large {
-    font-size: 32px;
-    font-weight: bold;
-     color: #007bff; 
-}
-
-
-
-
-/*  */
-
-
-*
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.C_showcase
-{
+/* bamigos logo */
+.custom-style-logo {
+  width: 100px;
+  height: auto;
+  margin: 20px;
+}
+.myLogoText {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.myLogoText .large {
+  font-size: 32px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Hero section */
+.C_showcase {
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -48,54 +39,36 @@
   transition: 0.5s;
   z-index: 2;
 }
-.C_showcase.active
-{
+.C_showcase.active {
   right: 300px;
 }
 
-.C_showcase video
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.8;
-}
-
-.C_showcase .C_text
-{
+.C_showcase .C_text {
   position: relative;
   z-index: 10;
 }
-
-.C_showcase .C_text h2
-{
+.C_showcase .C_text h2 {
   font-size: 5em;
   font-weight: 800;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
-.C_showcase .C_text h3
-{
+.C_showcase .C_text h3 {
   font-size: 3em;
   font-weight: 700;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
-.C_showcase .C_text p
-{
+.C_showcase .C_text p {
   font-size: 1.1em;
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
 }
-.C_showcase .C_text a
-{
+.C_showcase .C_text a {
   display: inline-block;
   font-size: 1em;
   background: #fff;
@@ -108,22 +81,37 @@
   letter-spacing: 2px;
   transition: 0.2s;
 }
-.C_showcase .C_text a:hover
-{
+.C_showcase .C_text a:hover {
   letter-spacing: 6px;
 }
-@media (max-width: 991px)
-{
-  .C_showcase
-  {
+@media (max-width: 991px) {
+  .C_showcase {
     padding: 40px;
   }
-  .C_showcase .C_text h2
-  {
+  .C_showcase .C_text h2 {
     font-size: 3em;
   }
-  .C_showcase .C_text h3
-  {
+  .C_showcase .C_text h3 {
     font-size: 2em;
   }
+}
+
+
+/* Canvas Element with sticky position */
+.canvas-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  /* background-color: #ff5000; */
+  z-index: 10;
+  /* background-color: transparent; */
+}
+.canvas-container canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: transparent;
+
 }

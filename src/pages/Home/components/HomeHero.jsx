@@ -3,7 +3,7 @@ import logoYellow from "../assets/img/logo-yellow.png";
 import sliderVideo from "../assets/video/slider-video.mp4";
 const HomeHero = () => {
   return (
-    <section class="C_showcase">
+    <section class="C_showcase cursor-light">
       <div class="C_text">
         <h3 > Premium</h3>
         <h2><span className="color-pink">Arcade </span><span className="color-yellow">Machines</span></h2>
