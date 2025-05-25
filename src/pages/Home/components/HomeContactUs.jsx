@@ -28,12 +28,12 @@ const HomeContactUs = () => {
               </div>
             </div>
           </Col>
-          <Col lg={6} md={6} sm={12} className="p-0 col-map box-shadow-map">
+          {/* <Col lg={6} md={6} sm={12} className="p-0 col-map box-shadow-map">
             <LoadScript googleMapsApiKey='AIzaSyAgIfLQi8KTxTJahilcem6qHusV-V6XXjw'>
               <GoogleMap mapContainerStyle={containerStyle} mapContainerClassName='bg-light-gray map' zoom={17.01} center={center}>
               </GoogleMap>
             </LoadScript>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>;

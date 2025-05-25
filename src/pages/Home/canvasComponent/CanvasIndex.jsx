@@ -1,7 +1,9 @@
 // Hero.jsx
 import React, { useState } from "react";
-
 import { Canvas } from "@react-three/fiber";
+import { Model } from "@canvasComp/Model";
+import { AnimatedModel } from "@canvasComp/AnimatedModel";
+import { OverlayUI } from "@canvasComp/OverlayUI";
 import {
   Loader,
   Center,
@@ -9,8 +11,8 @@ import {
   RandomizedLight,
   OrbitControls,
   Environment,
+  ScrollControls,
 } from "@react-three/drei";
-import { Model } from "@canvasComp/Model";
 
 export function CanvasIndex() {
   return (
@@ -22,12 +24,13 @@ export function CanvasIndex() {
         className="canvas"
         // onCreated={state => state.gl.setClearColor("red")}
       >
-        {/* <color attach={"background"} args={["#0078c8"]} /> */}
+        {/* <color attach={"background"} args={["#111"]} /> */}
         {/* <fog attach="fog" args={["#0078c8", 0, 150]} /> */}
-        <Center >
-          <Model castShadow position={[6, -1, 0]} />
-          <Model castShadow position={[4, -1, 0]} />
-          <Model castShadow position={[2, -1, 0]} />
+        <Center>
+            <OverlayUI />
+          <ScrollControls pages={8} damping={0.1}>
+            <AnimatedModel />
+          </ScrollControls>
         </Center>
         <AccumulativeShadows
           temporal
@@ -48,7 +51,7 @@ export function CanvasIndex() {
             bias={0.001}
           />
         </AccumulativeShadows>
-        <OrbitControls minPolarAngle={0} maxPolarAngle={Math.PI / 2} />
+        {/* <OrbitControls minPolarAngle={0} maxPolarAngle={Math.PI / 2} /> */}
         <Environment preset="city" />
       </Canvas>
       <Loader />

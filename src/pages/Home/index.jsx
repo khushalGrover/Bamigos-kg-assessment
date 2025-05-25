@@ -1,20 +1,20 @@
 import { useEffect } from 'react';
 import { toggleDocumentAttribute } from '@/utils';
 import WOW from 'wow.js';
-import Preloader from './components/Preloader';
-import NavigationBar from './components/NavigationBar';
-import HomeHero from './components/HomeHero';
-import HomeAbout from './components/HomeAbout';
-import HomeAboutBoxes from './components/HomeAboutBoxes';
-import HomeTeam from './components/HomeTeam';
-import HomeQuote from './components/HomeQuote';
-import HomePortfolio from './components/HomePortfolio';
-import HomePricing from './components/HomePricing';
-import HomeClients from './components/HomeClients';
-import HomeBlog from './components/HomeBlog';
-import HomeContactUs from './components/HomeContactUs';
-import Footer from './components/Footer';
-import AnimatedCursor from './components/AnimatedCursor';
+import Preloader from '@components/Preloader';
+import NavigationBar from '@components/NavigationBar';
+import HomeHero from '@components/HomeHero';
+import HomeAbout from '@components/HomeAbout';
+import HomeAboutBoxes from '@components/HomeAboutBoxes';
+import HomeTeam from '@components/HomeTeam';
+import HomeQuote from '@components/HomeQuote';
+import HomePortfolio from '@components/HomePortfolio';
+import HomePricing from '@components/HomePricing';
+import HomeClients from '@components/HomeClients';
+import HomeBlog from '@components/HomeBlog';
+import HomeContactUs from '@components/HomeContactUs';
+import Footer from '@components/Footer';
+import AnimatedCursor from '@components/AnimatedCursor';
 import { CanvasIndex } from './canvasComponent/CanvasIndex';
 import "@vendor/css/jquery.fancybox.min.css";
 import "@vendor/css/cubeportfolio.min.css";
@@ -48,19 +48,20 @@ const AdAgency = () => {
 
       <CanvasIndex />
 
+      {/*--- 
       <HomeHero />
       
       <HomeAboutBoxes />
 
       <HomeAbout /> 
-
-      {/* <HomeTeam /> */}
+      
+      <HomeTeam /> 
 
       <HomeQuote />
 
       <HomePortfolio />
 
-      {/* <HomePricing /> */}
+      <HomePricing /> 
 
       <HomeClients />
 
@@ -69,8 +70,10 @@ const AdAgency = () => {
       <HomeContactUs />
 
       <Footer />
-
+      
       <AnimatedCursor />
+      
+      ----*/}
     </>;
 };
 export default AdAgency;
