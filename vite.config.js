@@ -12,7 +12,7 @@ export default defineConfig({
     alias: {
       "@": resolve(__dirname, "src"),
       "@vendor": resolve(__dirname, "src/assets/vendor"),
-      "@components": resolve(__dirname, "src/components"),
+      "@components": resolve(__dirname, "src/pages/Home/components"),
       "@canvasComp": resolve(__dirname, "src/pages/Home/canvasComponent"),
     }
   }
