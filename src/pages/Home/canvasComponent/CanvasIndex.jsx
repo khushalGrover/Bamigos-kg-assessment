@@ -1,9 +1,6 @@
 // Hero.jsx
 import React, { useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Model } from "@canvasComp/Model";
-import { AnimatedModel } from "@canvasComp/AnimatedModel";
-import { OverlayUI } from "@canvasComp/OverlayUI";
 import {
   Loader,
   Center,
@@ -13,7 +10,6 @@ import {
   Environment,
   ScrollControls,
 } from "@react-three/drei";
-import { Model } from "@canvasComp/Model";
 import { AnimatedScroll } from "./AnimatedScroll";
 
 export function CanvasIndex() {
