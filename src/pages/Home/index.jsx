@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { toggleDocumentAttribute } from '@/utils';
 import WOW from 'wow.js';
-import Preloader from '@components/Preloader';
+// import Preloader from '@components/Preloader';
 import NavigationBar from '@components/NavigationBar';
 import HomeHero from '@components/HomeHero';
 import HomeAbout from '@components/HomeAbout';
@@ -42,16 +42,22 @@ const AdAgency = () => {
     };
   }, []);
   return <>
-      {/* <Preloader /> */}
+      {/* <Preloader /> 
+      
+      */}
 
       <NavigationBar />
 
       <CanvasIndex />
 
-      {/*--- 
-      <HomeHero />
+      <AnimatedCursor />
+      {/*
       
+      <HomeHero />
+
       <HomeAboutBoxes />
+      
+      <HomePortfolio />
 
       <HomeAbout /> 
       

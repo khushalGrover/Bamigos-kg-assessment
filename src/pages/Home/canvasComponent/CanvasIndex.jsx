@@ -13,6 +13,8 @@ import {
   Environment,
   ScrollControls,
 } from "@react-three/drei";
+import { Model } from "@canvasComp/Model";
+import { AnimatedScroll } from "./AnimatedScroll";
 
 export function CanvasIndex() {
   return (
@@ -20,18 +22,18 @@ export function CanvasIndex() {
       <Canvas
         shadows
         gl={{ alpha: true }}
-        camera={{ position: [0, 3, 5], fov: 30 }}
+        camera={{ position: [0, 5, 5], fov: 30 }}
         className="canvas"
         // onCreated={state => state.gl.setClearColor("red")}
       >
         {/* <color attach={"background"} args={["#111"]} /> */}
         {/* <fog attach="fog" args={["#0078c8", 0, 150]} /> */}
-        <Center>
-            <OverlayUI />
-          <ScrollControls pages={8} damping={0.1}>
-            <AnimatedModel />
-          </ScrollControls>
-        </Center>
+        <ScrollControls pages={6} damping={0.2}>
+          <AnimatedScroll />
+        </ScrollControls>
+        {/* <Model castShadow position={[6, -1, 0]} /> */}
+        {/* <Model castShadow position={[4, -1, 0]} /> */}
+        {/* <Model castShadow position={[2, -1, 0]} /> */}
         <AccumulativeShadows
           temporal
           frames={100}
