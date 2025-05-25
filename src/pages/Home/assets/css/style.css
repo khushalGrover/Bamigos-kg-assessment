@@ -66,6 +66,11 @@ body {
     background: url('../img/bg-2.jpg');
     /*background-size: cover;*/
 }
+.bg-dark3{
+    background: transparent;
+    /*background-size: cover;*/
+}
+
 
 
 ol, ul {
@@ -78,8 +83,9 @@ section, .section-padding {position: relative; padding: 7.5rem 0; overflow: hidd
 .portfolio-padding {
     padding: 7.5rem 0 4rem;
 }
-h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+    z-index: 3;
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 1;
@@ -418,7 +424,11 @@ a.image{
 .bg-light-gray3 {
     background-color: #f2f2f2;
 }
-.bg-yellow, .hvr-bg-yellow:hover {
+.bg-yellow {
+    background-color: #f1c40fc9;
+    outline: #f1c30f solid 2px;
+}
+.hvr-bg-yellow:hover {
     background-color: #f1c30f;
 }
 .bg-pink, .hvr-bg-pink:hover  {

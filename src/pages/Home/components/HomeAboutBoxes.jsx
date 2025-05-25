@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 const HomeAboutBoxes = () => {
-  return <section className="bg-dark2">
+  return <section className="bg-dark3">
       <Container>
         <Row>
           <Col md={12}>
