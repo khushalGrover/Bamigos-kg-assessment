@@ -103,6 +103,83 @@
 }
 
 
+.R_showcase {
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.R_showcase.active {
+  left: 300px;
+}
+
+.R_showcase .R_text {
+  position: relative;
+  z-index: 3;
+}
+
+.R_showcase .R_text h2 {
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.R_showcase .R_text h3 {
+  font-size: 3em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.R_showcase .R_text p {
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.R_showcase .R_text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.R_showcase .R_text a:hover {
+  letter-spacing: 6px;
+}
+
+@media (max-width: 991px) {
+  .R_showcase {
+    padding: 40px;
+  }
+  .R_showcase .R_text h2 {
+    font-size: 3em;
+  }
+  .R_showcase .R_text h3 {
+    font-size: 2em;
+  }
+}
+
+
 /* Canvas Element with fixed position */
 .canvas-container {
   position: fixed;

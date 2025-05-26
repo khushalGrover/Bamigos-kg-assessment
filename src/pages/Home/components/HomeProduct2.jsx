@@ -1,7 +1,7 @@
 const HomeProduct2 = () => {
   return (
-    <section class="L_showcase cursor-light" id="product1">
-      <div class="L_text">
+    <section class="R_showcase cursor-light" id="product1">
+      <div class="R_text">
         <h4 className="text-[2em] font-bold text-white leading-[1em] uppercase">#Top 2</h4>
         <h2><span className="color-pink">Hyper </span><span className="color-yellow">Jump</span></h2>
         <h4 className="text-[1em] font-bold text-white leading-[1em] uppercase">New Launches</h4>

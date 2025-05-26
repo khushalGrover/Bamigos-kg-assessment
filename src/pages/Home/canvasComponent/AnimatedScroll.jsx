@@ -30,7 +30,7 @@ export function AnimatedScroll() {
     tl.current.from(
       macOneRef.current.position,
       {
-        duration: 0.2,
+        duration: 0.15,
         x: 2,
       },
       0
@@ -38,18 +38,18 @@ export function AnimatedScroll() {
     tl.current.to(
       macOneRef.current.rotation || { x: 0, y: 0, z: 0 },
       {
-        duration: 0.2,
-        y: Math.PI * 2,
+        duration: 0.15,
+        y: -Math.PI * 2.5,
       },
-      0.18
+      0.2
     );
     tl.current.to(
       macOneRef.current.position,
       {
-        duration: 0.2,
+        duration: 0.15,
         x: 2,
       },
-      0.18
+      0.2
     );
      
     
@@ -60,7 +60,7 @@ export function AnimatedScroll() {
       macTwoRef.current.position,
       {
         duration: 0.2,
-        x: 8,
+        x: 12,
       },
       0.01
     );
