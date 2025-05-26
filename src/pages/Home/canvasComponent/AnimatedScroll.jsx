@@ -20,80 +20,143 @@ export function AnimatedScroll() {
   const scroll = useScroll();
 
   useFrame(() => {
-    tl.current.seek(scroll.offset * tl.current.duration() * 2);
-  });
+  const scrollProgress = scroll.offset; // value between 0 and 1
+  tl.current.seek(scrollProgress * tl.current.duration());
+});
+
 
   useLayoutEffect(() => {
     tl.current = gsap.timeline();
 
     // Machine One ANIMATION
+    // from right to left, when reach feature game section (page2)
     tl.current.from(
       macOneRef.current.position,
       {
-        duration: 0.15,
+        duration: 0.5,
         x: 2,
       },
-      0
+      0.25
     );
+
+    // Rotate the machine and move it
+    // from Left to right, when reach product1 section (page3)
     tl.current.to(
       macOneRef.current.rotation || { x: 0, y: 0, z: 0 },
       {
-        duration: 0.15,
+        duration: 0.75,
         y: -Math.PI * 2.5,
       },
-      0.2
+      2
     );
     tl.current.to(
       macOneRef.current.position,
       {
-        duration: 0.15,
+        duration: 0.75,
         x: 2,
       },
-      0.2
+      2
     );
+
+    // exit animation move to right when react product2 section (page4)
+     tl.current.to(
+      macOneRef.current.position,
+      {
+        duration: 0.5,
+        x: 6,
+        z:0,
+      },
+      4
+    );
+   
+
+    
      
     
     
     // Machine Two ANIMATION
-    // Machine One ANIMATION
+    //entry animation
+    // from right to left, when reach feature game section (page2)
     tl.current.from(
       macTwoRef.current.position,
       {
-        duration: 0.2,
+        duration: 0.5,
         x: 12,
       },
-      0.01
+      0.25
     );
+    // exit animation
+    // move to z -8 when reach product1 section (page3)
       tl.current.to(
       macTwoRef.current.position,
       {
-        duration: 0.2,
-        z: 5,
+        duration: 0.5,
+        z: -8,
       },
-      0.22
+      2
     );
+    // entry animation
+    // from z -8 to x 2 when reach product3 section (page5) 
+     tl.current.to(
+      macTwoRef.current.position,
+      {
+        duration: 0.5,
+        x: 2,
+        z:0,
+      },
+      6
+    );
+    
+   
 
     
 
 
     // Machine Three ANIMATION
-    // Machine One ANIMATION
+     // from right to left, when reach feature game section (page2)
     tl.current.from(
       macThreeRef.current.position,
       {
-        duration: 0.2,
+        duration: 0.5,
         x: 6,
       },
-      0.02
+      0.25
     );
+    // exit from feature section to 
     tl.current.to(
       macThreeRef.current.position,
       {
-        duration: 0.2,
-        z: 5,
+        duration: 0.5,
+        z: -8,
+        x: -4,
       },
-      0.2
+      1.9
     );
+    // Come near tp product2 section target
+     tl.current.to(
+      macThreeRef.current.position,
+      {
+        duration: 0.5,
+        x: -10,
+        z:0,
+      },
+      3
+    );
+    // from (-10)left to -2 entry in product section ( page4)
+    tl.current.to(
+      macThreeRef.current.position,
+      {
+        duration: 0.5,
+        x: -2,
+      },
+      4.5
+    );
+    // exit animation move to left when react product3 section (page4)
+    //code here
+
+
+
+
   }, []);
 
   return (
@@ -104,7 +167,7 @@ export function AnimatedScroll() {
         <HomeProduct1 />
         <HomeProduct2 />
         <HomeProduct3 />
-        <HomeHero />
+        {/* <HomeHero /> */}
       </Scroll>
       <group dispose={null} ref={macOneRef} position={[-2, -1, 0]}>
         <Model />

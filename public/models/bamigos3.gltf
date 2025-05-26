@@ -175,14 +175,14 @@
 	"accessors":[
 		{
 			"componentType":5126,
-			"count":108,
+			"count":718,
 			"max":[
 				1.5213351249694824,
 				2.473224401473999,
 				0.3591243028640747
 			],
 			"min":[
-				0,
+				-1.5213351249694824,
 				0,
 				-0.3591243028640747
 			],
@@ -190,22 +190,22 @@
 		},
 		{
 			"componentType":5126,
-			"count":108,
+			"count":718,
 			"type":"VEC3"
 		},
 		{
 			"componentType":5126,
-			"count":108,
+			"count":718,
 			"type":"VEC2"
 		},
 		{
 			"componentType":5123,
-			"count":318,
+			"count":1836,
 			"type":"SCALAR"
 		},
 		{
 			"componentType":5126,
-			"count":292,
+			"count":1458,
 			"max":[
 				1.482190489768982,
 				2.4213995933532715,
@@ -220,29 +220,29 @@
 		},
 		{
 			"componentType":5126,
-			"count":292,
+			"count":1458,
 			"type":"VEC3"
 		},
 		{
 			"componentType":5126,
-			"count":292,
+			"count":1458,
 			"type":"VEC2"
 		},
 		{
 			"componentType":5123,
-			"count":594,
+			"count":2430,
 			"type":"SCALAR"
 		},
 		{
 			"componentType":5126,
-			"count":728,
+			"count":3448,
 			"max":[
 				1.2682042121887207,
 				0.5201471447944641,
 				0.4639616310596466
 			],
 			"min":[
-				0,
+				-1.2682042121887207,
 				0.1266120821237564,
 				0.3724898397922516
 			],
@@ -250,17 +250,17 @@
 		},
 		{
 			"componentType":5126,
-			"count":728,
+			"count":3448,
 			"type":"VEC3"
 		},
 		{
 			"componentType":5126,
-			"count":728,
+			"count":3448,
 			"type":"VEC2"
 		},
 		{
 			"componentType":5123,
-			"count":1557,
+			"count":9198,
 			"type":"SCALAR"
 		},
 		{
@@ -297,23 +297,23 @@
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":1139,
+			"byteLength":6042,
 			"byteOffset":0
 		},
 		{
 			"buffer":0,
-			"byteLength":2038,
-			"byteOffset":1140
+			"byteLength":9313,
+			"byteOffset":6044
 		},
 		{
 			"buffer":0,
-			"byteLength":4070,
-			"byteOffset":3180
+			"byteLength":12006,
+			"byteOffset":15360
 		},
 		{
 			"buffer":0,
 			"byteLength":1649,
-			"byteOffset":7252
+			"byteOffset":27368
 		}
 	],
 	"samplers":[
@@ -324,7 +324,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":8904,
+			"byteLength":29020,
 			"uri":"bamigos3.bin"
 		}
 	]
