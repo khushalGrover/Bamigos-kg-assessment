@@ -26,138 +26,29 @@ export function AnimatedScroll() {
 
 
   useLayoutEffect(() => {
-    tl.current = gsap.timeline();
+  tl.current = gsap.timeline();
 
-    // Machine One ANIMATION
-    // from right to left, when reach feature game section (page2)
-    tl.current.from(
-      macOneRef.current.position,
-      {
-        duration: 0.5,
-        x: 2,
-      },
-      0.25
-    );
+  // Page 2 (0.2): All 3 Machines Enter
+  tl.current.from(macOneRef.current.position, { x: 2, duration: 0.2 }, 0);
+  tl.current.from(macTwoRef.current.position, { x: 12, duration: 0.25 }, 0);
+  tl.current.from(macThreeRef.current.position, { x: 6, duration: 0.25 }, 0);
 
-    // Rotate the machine and move it
-    // from Left to right, when reach product1 section (page3)
-    tl.current.to(
-      macOneRef.current.rotation || { x: 0, y: 0, z: 0 },
-      {
-        duration: 0.75,
-        y: -Math.PI * 2.5,
-      },
-      2
-    );
-    tl.current.to(
-      macOneRef.current.position,
-      {
-        duration: 0.75,
-        x: 2,
-      },
-      2
-    );
+  // Page 3 (0.4): Machine One rotate + move right; Others move back in Z
+  tl.current.to(macOneRef.current.rotation, { y: -Math.PI * 2.5, duration: 0.2 }, 0.4);
+  tl.current.to(macOneRef.current.position, { x: 2, duration: 0.2 }, 0.4);
+  tl.current.to(macTwoRef.current.position, { z: -8, duration: 0.25 }, 0.4);
+  tl.current.to(macThreeRef.current.position, { z: -8, duration: 0.25 }, 0.4);
+  tl.current.to(macThreeRef.current.position, { x: -2, z: 0, duration: 0.01 }, 0.6);
 
-    // exit animation move to right when react product2 section (page4)
-     tl.current.to(
-      macOneRef.current.position,
-      {
-        duration: 0.5,
-        x: 6,
-        z:0,
-      },
-      4
-    );
-   
+  // Page 4 (0.6): Machine One exits right; Machine Three enters from left
+  tl.current.to(macOneRef.current.position, { x: 6, z: 0, duration: 0.25 }, 0.6);
+  tl.current.to(macThreeRef.current.position, { x: -2, z:0, duration: 0.25 }, 0.6);
 
-    
-     
-    
-    
-    // Machine Two ANIMATION
-    //entry animation
-    // from right to left, when reach feature game section (page2)
-    tl.current.from(
-      macTwoRef.current.position,
-      {
-        duration: 0.5,
-        x: 12,
-      },
-      0.25
-    );
-    // exit animation
-    // move to z -8 when reach product1 section (page3)
-      tl.current.to(
-      macTwoRef.current.position,
-      {
-        duration: 0.5,
-        z: -8,
-      },
-      2
-    );
-    // entry animation
-    // from z -8 to x 2 when reach product3 section (page5) 
-     tl.current.to(
-      macTwoRef.current.position,
-      {
-        duration: 0.5,
-        x: 2,
-        z:0,
-      },
-      6
-    );
-    
-   
+  // Page 5 (0.8): Machine Two re-enters
+  tl.current.to(macTwoRef.current.position, { x: 2, z: 0, duration: 0.5 }, 0.8);
+  tl.current.to(macThreeRef.current.position, { x: -6, duration: 0.25 }, 1);
+}, []);
 
-    
-
-
-    // Machine Three ANIMATION
-     // from right to left, when reach feature game section (page2)
-    tl.current.from(
-      macThreeRef.current.position,
-      {
-        duration: 0.5,
-        x: 6,
-      },
-      0.25
-    );
-    // exit from feature section to 
-    tl.current.to(
-      macThreeRef.current.position,
-      {
-        duration: 0.5,
-        z: -8,
-        x: -4,
-      },
-      1.9
-    );
-    // Come near tp product2 section target
-     tl.current.to(
-      macThreeRef.current.position,
-      {
-        duration: 0.5,
-        x: -10,
-        z:0,
-      },
-      3
-    );
-    // from (-10)left to -2 entry in product section ( page4)
-    tl.current.to(
-      macThreeRef.current.position,
-      {
-        duration: 0.5,
-        x: -2,
-      },
-      4.5
-    );
-    // exit animation move to left when react product3 section (page4)
-    //code here
-
-
-
-
-  }, []);
 
   return (
     <>
