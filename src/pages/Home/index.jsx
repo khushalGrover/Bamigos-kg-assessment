@@ -13,6 +13,7 @@ import HomePricing from '@components/HomePricing';
 import HomeClients from '@components/HomeClients';
 import HomeBlog from '@components/HomeBlog';
 import HomeContactUs from '@components/HomeContactUs';
+import Preloader from '@components/Preloader';
 import Footer from '@components/Footer';
 import AnimatedCursor from '@components/AnimatedCursor';
 import { CanvasIndex } from './canvasComponent/CanvasIndex';
@@ -42,11 +43,9 @@ const AdAgency = () => {
     };
   }, []);
   return <>
-      {/* <Preloader /> 
-      
-      */}
-
-      <NavigationBar />
+      {/* <Preloader />  */}
+         
+      {/* <NavigationBar /> */}
 
       <CanvasIndex />
 

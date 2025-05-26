@@ -5,6 +5,9 @@ import React, { useLayoutEffect, useRef } from "react";
 import { Model } from "./Model";
 import HomeHero from "@components/HomeHero";
 import HomeFeature from "@components/HomeFeature";
+import HomeProduct1 from "@components/HomeProduct1";
+import HomeProduct2 from "@components/HomeProduct2";
+import HomeProduct3 from "@components/HomeProduct3";
 
 export function AnimatedScroll() {
   const ref = useRef();
@@ -76,8 +79,9 @@ export function AnimatedScroll() {
       <Scroll html>
         <HomeHero />
         <HomeFeature />
-        <HomeHero />
-        <HomeHero />
+        <HomeProduct1 />
+        <HomeProduct2 />
+        <HomeProduct3 />
         <HomeHero />
       </Scroll>
       <group dispose={null} ref={macOneRef} position={[0, -1, 0]}>

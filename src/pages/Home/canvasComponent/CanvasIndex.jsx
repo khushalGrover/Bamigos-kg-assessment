@@ -24,7 +24,7 @@ export function CanvasIndex() {
       >
         {/* <color attach={"background"} args={["#111"]} /> */}
         {/* <fog attach="fog" args={["#0078c8", 0, 150]} /> */}
-        <ScrollControls pages={6} damping={0.2}>
+        <ScrollControls pages={7} damping={0.2}>
           <AnimatedScroll />
         </ScrollControls>
         {/* <Model castShadow position={[6, -1, 0]} /> */}
